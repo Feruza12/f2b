@@ -445,6 +445,15 @@ button{
 	width: 95%;
 	padding: 50px;
 }
+.margin .container .row .content_two{
+	margin-top: 80px;
+} 
+.container .row .content{
+	margin-top: 50px;
+}
+.margin{
+	margin-top: 200px;
+}
 }
 @media only screen and (max-width: 456px) {    
   .margin:before{
