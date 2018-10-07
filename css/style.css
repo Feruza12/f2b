@@ -39,8 +39,12 @@ body{
 	padding: 5px 28px;
 	display: inline-block
 }
-.landing_bg .content{
-	margin-top: 120px;
+.landing_bg .container .row .content{
+	margin-top: 100px;
+}
+.landing_bg .dropdown button{
+	border: none;
+	background: transparent;
 }
  .content h1{
 	color: black;
@@ -125,34 +129,110 @@ body{
 	/*margin-top: 0px;*/
 	z-index: -9;
 }
-.bg_first{
-	background-image: -webkit-linear-gradient(left, #00BC35, #007822);
-	background-image: -o-linear-gradient(left, #00BC35, #007822);
-	background-image: linear-gradient(to right, #00BC35, #007822);
+.hover-animation{
+	position: relative;
+}
+.hover_animation:hover{
+	/*background-size: 110%;*/
+	/*color: red;*/
+	/*background: red;*/
+	/*background-color: yellow;*/
+}
+/*.hover_animation:after{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow: hidden;
+	background: (0,0,0,0.7);
+	color: white;
+	padding: 0px 10px;
+	transition: 0.5s;
+	content: attr(data-text);
+}*/
+.hover_animation p{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
 	height: 350px;
-	border-radius: 15px
+	width: 92%;
+	left: 50%;
+	transform: translateX(-50%);
+	overflow: hidden;
+	position: absolute;
+	transition: all 0.4s;
+	cursor: default;
+	margin-top: 50px;
+	color: white;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	text-align: justify;
+	padding: 40px;
+}
+.hover_animation:hover p{
+	opacity: 1;
+	margin-top: 0px;
+	transition: all 0.4s;
+	border-radius: 15px;
+	background-color: rgba(0,0,0,.7);
+}
+.hover_animetion:hover img{
+	filter: blur(2px);	
+}	
+/*.hover_animation:hover:after{
+	opacity: 1;
+	top: 0;
+	padding: 10px;
+	
+}*/
+.bg_first{
+	background: -webkit-linear-gradient(left, #00BC35, #007822);
+	background: -webkit-linear-gradient(left, rgb(0, 188, 53), rgb(0, 120, 34)),  url(../gallery/first.svg);
+	background: -o-linear-gradient(left, #00BC35, #007822);
+	/*background: linear-gradient(to right, #00BC35, #007822);*/
+	/*background: linear-gradient(left, #00BC35, #007822), ulr(../gallery/first.svg);*/
+	/*background-size: 100%;*/
+	background-image: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 350px;
+	width: 100%;
+	border-radius: 15px;
+	/*background-image: url(../gallery/first.svg);*/
+
 }
 .bg_first img{
 	/*vertical-align: baseline;*/
 	margin-top: 85px;
 }
 .bg_second{
-	background-image: -webkit-linear-gradient(left, #006894, #172C57);
-	background-image: -o-linear-gradient(left, #006894, #172C57);
-	background-image: linear-gradient(to right, #006894, #172C57);
+	background: -webkit-linear-gradient(left, #006894, #172C57);
+	background: -o-linear-gradient(left, #006894, #172C57);
+	background: linear-gradient(to right, #006894, #172C57);
+	/*background: linear-gradient(left, #00BC35, #007822), ulr(../gallery/first.svg);*/
 	height: 350px;
-	border-radius: 15px
+	border-radius: 15px;
+	/*background-image: url(../gallery/first.svg);*/
+
 }
 .bg_second img{
 	margin-top: 50px;
 }
 .bg_third{
-	background-image: -webkit-linear-gradient(left, #F58300, #B86200);
-	background-image: -o-linear-gradient(left, #F58300, #B86200);
-	background-image: linear-gradient(to right, #F58300, #B86200);
+	background: -webkit-linear-gradient(left, #F58300, #B86200);
+	background: -o-linear-gradient(left, #F58300, #B86200);
+	background: linear-gradient(to right, #F58300, #B86200);
+	/*background: linear-gradient(left, #00BC35, #007822), ulr(../gallery/first.svg);*/
 	height: 350px;
 	margin-bottom: 80px;
-	border-radius: 15px
+	border-radius: 15px;
+	/*background-image: url(../gallery/first.svg);*/
+
 }
 .bg_third img{
 	margin-top: 80px;
@@ -327,8 +407,8 @@ button{
 }
 
 @media only screen and (max-width: 992px) {    
-  .landing_bg .content{
-  	margin-top: 350px;
+  .landing_bg .container .row .content{
+  	margin-top: 310px;
   }
   .margin{
   	margin-top: 270px;
@@ -348,11 +428,22 @@ button{
 	background-size: cover;
 	/*background-position: cover;*/
 }
+.hover_animation p{
+	font-size: 0.9em;
+	width: 88%;
+	padding: 20px;
+
+}
 
 }
 @media only screen and (max-width: 768px) {    
   .background_content:before{
 	display: none;
+}
+.hover_animation p{
+	font-size: 1em;
+	width: 95%;
+	padding: 50px;
 }
 }
 @media only screen and (max-width: 456px) {    
@@ -374,4 +465,9 @@ button{
   .footer li p{
   	font-size: 0.85em;
   }
+  .hover_animation p{
+	font-size: 1em;
+	width: 91%;
+	padding: 50px;
+}
 }
