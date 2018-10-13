@@ -162,6 +162,7 @@ body{
 	justify-content: space-around;
 	flex-direction: column;
 	border-radius: 15px;
+	background: transparent;
 }
 
 .hover_animation:hover .hover_text{
