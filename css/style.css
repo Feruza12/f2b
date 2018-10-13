@@ -48,6 +48,7 @@ body{
 	border: none;
 	background: transparent;
 	outline: none;
+
 }
 .landing_bg .dropdown button:active{
 	outline: none!important;
@@ -156,16 +157,13 @@ body{
 	right: 0;
 	bottom: 0;
 	margin: 0 15px;
-	/*margin-top: 0;*/
 	transform: translateY(100%);
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
 	border-radius: 15px;
 }
-.hover_animation .hover_text p{
-	/*padding-top: 20%;*/
-}
+
 .hover_animation:hover .hover_text{
 	transform: translateY(0);
 	opacity: 1;
@@ -174,6 +172,7 @@ body{
 	border-radius: 15px;
 	background-color: rgba(0,0,0,.7);
 	color: #fff;
+	height: 350px;
 }
 .hover_animetion:hover img{
 	filter: blur(2px);	
@@ -188,21 +187,17 @@ body{
 	height: 350px;
 	width: 100%;
 	border-radius: 15px;
-	/*background-image: url(../gallery/first.svg);*/
 
 }
 .bg_first img{
-	/*vertical-align: baseline;*/
 	margin-top: 85px;
 }
 .bg_second{
 	background: -webkit-linear-gradient(left, #006894, #172C57);
 	background: -o-linear-gradient(left, #006894, #172C57);
 	background: linear-gradient(to right, #006894, #172C57);
-	/*background: linear-gradient(left, #00BC35, #007822), ulr(../gallery/first.svg);*/
 	height: 350px;
 	border-radius: 15px;
-	/*background-image: url(../gallery/first.svg);*/
 
 }
 .bg_second img{
@@ -212,12 +207,8 @@ body{
 	background: -webkit-linear-gradient(left, #F58300, #B86200);
 	background: -o-linear-gradient(left, #F58300, #B86200);
 	background: linear-gradient(to right, #F58300, #B86200);
-	/*background: linear-gradient(left, #00BC35, #007822), ulr(../gallery/first.svg);*/
 	height: 350px;
-	/*margin-bottom: 80px;*/
 	border-radius: 15px;
-	/*background-image: url(../gallery/first.svg);*/
-
 }
 .bg_third img{
 	margin-top: 80px;
@@ -347,7 +338,6 @@ ul li{
 }
 input{
 	outline: none!important;
-	/*margin-bottom: 50px;*/
 	background-color: transparent;
 	border: none!important;
 }
@@ -359,8 +349,6 @@ button{
 	font-weight: bold;
 	cursor: pointer;
 	outline: none!important;
-	/*margin: 0;*/
-	/*background: transparent;*/
 }
 .flex_box{
 	display: -webkit-flex;
@@ -388,15 +376,16 @@ button{
 }
 .background_content:before{
 	margin-top: 290px;
-	/*width: 50%;*/
 	background-size: cover;
-	/*background-position: cover;*/
 }
 .hover_animation p{
 	font-size: 0.9em;
 	width: 88%;
 	padding: 20px;
 
+}
+.flex_box{
+	margin-bottom: 30px;
 }
 
 }
